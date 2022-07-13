@@ -1,0 +1,21 @@
+<!-- <div class="all-semesters space-y-6">
+  <h4 class="text-center font-bold">Semester 1</h4>
+  <div class="grid grid-cols-4 gap-4">
+    <app-class  *ngFor="let class of classes" [class]="class"></app-class>
+  </div>
+  <app-classe-details *ngIf="showdetails"></app-classe-details>
+  <h4 class="text-center font-bold">Semester 2</h4>
+  <div class="grid grid-cols-4 gap-4">
+    <app-class  *ngFor="let class of classes2" [class]="class"></app-class>
+  </div>
+</div> -->
+
+<div class="all-semesters space-y-6">
+<app-semester [classese] = "classese"></app-semester>
+<app-semester [classese] = "classese2"></app-semester>
+
+</div>
+
+
+
+
