@@ -11,8 +11,10 @@
 </div> -->
 
 <div class="all-semesters space-y-6">
-<app-semester [classese] = "classese"></app-semester>
-<app-semester [classese] = "classese2"></app-semester>
+<app-semester semester = 1 [classese] = "classes"></app-semester>
+<app-semester semester = 2 [classese] = "classes2"></app-semester>
+
+<a routerLink="/">Go back home</a>
 
 </div>
 

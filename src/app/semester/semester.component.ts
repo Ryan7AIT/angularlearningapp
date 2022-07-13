@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ClassService } from '../class.service';
+import { Class } from '../class';
 
 
 @Component({
@@ -11,9 +12,11 @@ export class SemesterComponent implements OnInit {
 
   constructor(private service : ClassService) { }
 
-  @Input() classese!: Array<string>;
+  @Input() classese!: Class[]
+  @Input() semester!: string ;
 
-  name: string = '';
+
+  class!: Class ;
 
 
   ngOnInit(): void {
@@ -21,9 +24,9 @@ export class SemesterComponent implements OnInit {
 
   showdetails: boolean = false;
 
-  showInfo(classe: any) {
+  showInfo(classe: Class) {
     this.showdetails = true
-    this.name = classe
+    this.class = classe;
   }
 
 

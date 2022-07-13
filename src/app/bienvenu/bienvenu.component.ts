@@ -3,17 +3,16 @@ import { ActivatedRoute } from '@angular/router';
 import { Class } from '../class';
 import { ClassService } from '../class.service';
 
+
 @Component({
-  selector: 'app-classe-details',
-  templateUrl: './classe-details.component.html',
-  styleUrls: ['./classe-details.component.css']
+  selector: 'app-bienvenu',
+  templateUrl: './bienvenu.component.html',
+  styleUrls: ['./bienvenu.component.css']
 })
-export class ClasseDetailsComponent implements OnInit {
+export class BienvenuComponent implements OnInit {
 
-  //@Input() classe!: Class;
-  //@Output() showDetails: EventEmitter<any> = new EventEmitter();
+  @Input() classe!: Class;
 
-  classe!: Class;
 
   //classe?: Class
 
@@ -24,7 +23,7 @@ export class ClasseDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getClass();
+   this.getClass();
   }
 
 

@@ -1,10 +1,26 @@
-export const CLASSES:any = [
+import { Class } from "./class"
+export const CLASSES: Class[]  = [
 
-  {name: 'analyse 1' },
-  {name: 'Algebre 1'},
-  {name: ' CRI'},
-  {name: 'algorithme 1'},
-  {name: 'TCE 1'}
+  {id: 1,
+  name: 'analyse 1',
+  major: 'mi'
+  },
+  {id: 2,
+    name: 'algebre 1',
+    major: 'mi'
+  },
+  {id: 3,
+    name: 'algoruthme 1',
+    major: 'mi'
+  },
+  {id: 4,
+    name: 'TCE ',
+    major: 'mi'
+  },
+  {id: 5,
+    name: 'fizik',
+    major: 'mi'
+  },
 
 
 ]

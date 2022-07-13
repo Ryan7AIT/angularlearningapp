@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, Input } from '@angular/core';
 import { ClassService } from '../class.service';
+import { Class } from '../class';
 
 
 @Component({
@@ -10,31 +11,28 @@ import { ClassService } from '../class.service';
 export class ClassesComponent implements OnInit {
 
   @Input() semester! : string;
-  @Input() classes! : string;
 
 
-  classese = [];
-  classese2 = [];
+  classes : Class[] = [];
+  classes2 : Class[] = [];
 
-   showdetails:boolean = false;
-
-
-
-
+  showdetails:boolean = false;
 
   constructor(private service : ClassService) { }
 
   ngOnInit(): void {
-     this.getClasses();
-     this.getClasses2();
+    this.getClasses();
+    this.getClasses2();
   }
 
-   getClasses() {
-     this.classese = this.service.classes
-   }
+  getClasses(): void {
+    this.service.getClasses()
+      .subscribe(classes => this.classes = classes)
+  }
 
-  getClasses2() {
-    this.classese2 = this.service.classes2
+  getClasses2(): void {
+    this.service.getClasses2()
+      .subscribe(classes2 => this.classes2 = classes2 )
   }
 
 
