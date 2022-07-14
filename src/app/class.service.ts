@@ -18,6 +18,7 @@ export class ClassService {
 
   classes = [];
   classes2 = [];
+  progress = 0;
 
 
   getClasses() {
@@ -30,12 +31,17 @@ export class ClassService {
     return classes2
     }
 
-    getClasse(id: number) {
-    const classe = CLASSES.find(c => c.id === id )!;
-    return of(classe)
+  getClasse(id: number) {
+
+    const url = `http://localhost:3000/classes/${id}`
+    return this.http.get<Class>(url);
+
+
+    // const classe = CLASSES.find(c => c.id === id )!;
+    // return of(classe)
   }
 
-  getCours(){
+    getCours(){
     const coursUrl = "http://localhost:3000/cours";
     return this.http.get<Cour[]>(coursUrl);
 
@@ -46,6 +52,19 @@ export class ClassService {
 
     return this.http.put<Cour>(url,v)
 
+  }
+
+  updateClass(v:any){
+    const url = `http://localhost:3000/classes/${v.id}`;
+
+    return this.http.put<Cour>(url,v)
+
+  }
+
+  clacProgress() {
+
+
+    return this.classes ;
   }
 
 

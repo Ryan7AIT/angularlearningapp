@@ -5,5 +5,6 @@ export interface Cour {
   name: string;
   link: string;
   status: boolean;
+// /  chapters: number;
 
 }

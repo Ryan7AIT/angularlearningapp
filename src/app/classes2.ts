@@ -3,23 +3,28 @@ export const CLASSES2: Class[]  = [
 
   {id: 1,
   name: 'analyse 2',
-  major: 'mi'
+  major: 'mi',
+  progress: 0
   },
   {id: 2,
     name: 'algebre 2',
-    major: 'mi'
+    major: 'mi',
+    progress: 0
   },
   {id: 3,
-    name: 'algoruthme 2',
-    major: 'mi'
+    name: 'algoruthme 222',
+    major: 'mi',
+    progress: 0
   },
   {id: 4,
-    name: 'Latex ',
-    major: 'mi'
+    name: 'TCE ',
+    major: 'mi',
+    progress: 0
   },
   {id: 5,
-    name: 'elictricite',
-    major: 'mi'
+    name: 'fizik2 ',
+    major: 'mi',
+    progress: 0
   },
 
 

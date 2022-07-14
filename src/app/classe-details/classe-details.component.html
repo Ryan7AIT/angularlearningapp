@@ -1,10 +1,11 @@
 <div class="">
 
-  <h4 class="font-blod font-xl text-center">{{ classe.name }} </h4>
+  <h4 class="font-blod font-xl text-center">{{ classe.name }}  </h4>
   <div class="text-center progress mx-10">progresse:
 
+
     <div class="w-full bg-blue-200 rounded-full dark:bg-gray-700">
-      <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> 90%</div>
+      <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> {{ classe.progress }}</div>
     </div>
 
   </div>
@@ -18,7 +19,7 @@
 
       <div class="" *ngFor="let cour of cours ">
 
-        <app-cour (onChange)="courTerminer($event)" [cour]="cour"></app-cour>
+        <app-cour (onChange)="courTerminer(cour)" [cour]="cour"></app-cour>
       </div>
 
     </div>

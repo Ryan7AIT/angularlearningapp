@@ -13,13 +13,16 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class ClasseDetailsComponent implements OnInit {
 
-  //@Input() classe!: Class;
-  //@Output() showDetails: EventEmitter<any> = new EventEmitter();
+
 
   classe!: Class;
   cours: Cour[] = [];
+  per!: number ;
 
-  //classe?: Class
+  totalLength!: number;
+
+
+
 
   constructor(
     private route: ActivatedRoute,
@@ -32,6 +35,18 @@ export class ClasseDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.getClass();
     this.getCours();
+    this.prog();
+
+
+    setTimeout(this.prog, 1000);
+
+
+
+
+
+  }
+
+  ngAfterContentInit() {
   }
 
 
@@ -39,24 +54,65 @@ export class ClasseDetailsComponent implements OnInit {
   getClass(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.classService.getClasse(id)
-      .subscribe(classe => this.classe = classe);
+      .subscribe(classe => this.classe= classe);
   }
 
   getCours(): void {
     this.classService.getCours()
       .subscribe(cours => this.cours = cours);
+
+
+
   }
 
-  courTerminer(v:any){
+  courTerminer(v:Cour){
+
+
 
     const i = this.cours.indexOf(v);
 
-    console.log(v.status)
+    // console.log(this.classe)
 
-    this.service.updateCours(v)
-    .subscribe()
+
+    this.service.updateCours(v).subscribe()
+
+    this.updateProg()
+
+
 
   }
+
+  updateProg() {
+
+    const totalLength = this.cours.length;
+
+    const coursCompleted = this.cours.filter(c => c.status == true )
+
+    this.per = (coursCompleted.length * 100) / totalLength;
+
+    this.classe.progress = this.per
+
+    this.service.updateClass(this.classe).subscribe()
+  }
+
+  prog() {
+    // let l =
+    // this.classService.clacProgress()
+
+    const totalLength = this.cours.length;
+
+
+    const coursCompleted = this.cours.filter(c => c.status == true )
+    this.per = (coursCompleted.length * 100) / totalLength;
+
+    console.log(this.per)
+
+   // return this.per
+  }
+
+
+
+
 
 
 

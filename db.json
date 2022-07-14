@@ -2,43 +2,47 @@
   "classes": [
     {
       "id": 1,
-      "name": "algorithme 1",
-      "major": "mi"
+      "name": "Algorithme 1",
+      "major": "mi",
+      "progress": 66.66666666666667
     },
     {
       "id": 2,
-      "name": "analyse 1",
-      "major": "mi"
+      "name": "Analyse 1",
+      "major": "mi",
+      "progress": 0
     },
     {
       "id": 3,
       "name": "algebre 1",
-      "major": "mi"
+      "major": "mi",
+      "progress": 0
     },
     {
       "id": 4,
       "name": "TCE",
-      "major": "mi"
+      "major": "mi",
+      "progress": 0
     }
   ],
   "cours": [
     {
       "id": 1,
-      "name": "les fonctions",
-      "link": "../../assets/cours2 EDO.pdf",
+      "name": "Algorithme 1",
+      "major": "mi",
       "status": false
     },
     {
       "id": 2,
       "name": "les suit",
       "link": "../../assets/cours2 EDO.pdf",
-      "status": false
+      "status": true
     },
     {
       "id": 3,
       "name": "les integral",
       "link": "../../assets/cours2 EDO.pdf",
-      "status": false
+      "status": true
     }
   ]
 }
