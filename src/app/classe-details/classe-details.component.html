@@ -1,6 +1,56 @@
-<h4>welcome to: </h4>
-<p>
-{{ classe.name}}
-</p>
+<div class="">
 
-<a routerLink="/modules">go BACK</a>
+  <h4 class="font-blod font-xl text-center">{{ classe.name }} </h4>
+  <div class="text-center progress mx-10">progresse:
+
+    <div class="w-full bg-blue-200 rounded-full dark:bg-gray-700">
+      <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> 90%</div>
+    </div>
+
+  </div>
+  <div class=" border vorder-rounded bg-white p-6 m-2">
+    <div class="border-b-2 border-blue-500 ">
+
+      <p class="pb-4 text-center">Cahpter 1 </p>
+    </div>
+
+    <div class="chapters space-y-4 ml-4 mt-4 text-gray-700">
+
+      <div class="" *ngFor="let cour of cours ">
+
+        <app-cour (onChange)="courTerminer($event)" [cour]="cour"></app-cour>
+      </div>
+
+    </div>
+
+    <div class="border-b-2 border-blue-500">
+
+      <p class="pb-4 text-center">Cahpter 2 </p>
+
+      <div class="chapters space-y-4 ml-4 mt-4 text-gray-700">
+
+        <div class="flex justify-between  pr-6" *ngFor="let cour of cours ">
+
+
+          <a href="{{ cour.link}}" target="_blank">
+            {{ cour.name}}
+          </a>
+
+          <div class="complete space-x-4 ">
+
+            <label for="status">Complete?</label>
+            <input id="status" name="status" class="px-6" type="checkbox">
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+  <a routerLink="/modules">go BACK</a>
+</div>

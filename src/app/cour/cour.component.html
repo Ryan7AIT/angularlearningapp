@@ -1,0 +1,16 @@
+<div class="cour flex justify-between  pr-6">
+
+  <a href="{{ cour.link}}" target="_blank">
+    {{ cour.name }}
+  </a>
+
+  <div class="complete space-x-4 ">
+
+    <label for="status">Complete?</label>
+    <input class="px-6 "  id="status" type="checkbox" id="scales" name="scales"  (change)="onChanges(cour) "
+    [checked]=" this.cour.status ? true : false"
+
+    >
+  </div>
+
+</div>

@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +12,7 @@ import { ClasseDetailsComponent } from './classe-details/classe-details.componen
 import { SemesterComponent } from './semester/semester.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { BienvenuComponent } from './bienvenu/bienvenu.component';
+import { CourComponent } from './cour/cour.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,14 @@ import { BienvenuComponent } from './bienvenu/bienvenu.component';
     ClasseDetailsComponent,
     SemesterComponent,
     WelcomeComponent,
-    BienvenuComponent
+    BienvenuComponent,
+    CourComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
