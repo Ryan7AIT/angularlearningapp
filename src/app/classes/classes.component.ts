@@ -10,15 +10,10 @@ import { Class } from '../class';
 })
 export class ClassesComponent implements OnInit {
 
-  @Input() semester! : string;
-
-
   classes : Class[] = [];
   classes2 : Class[] = [];
 
-  showdetails:boolean = false;
-
-  constructor(private service : ClassService) { }
+  constructor(private classService : ClassService) { }
 
   ngOnInit(): void {
     this.getClasses();
@@ -26,12 +21,12 @@ export class ClassesComponent implements OnInit {
   }
 
   getClasses(): void {
-    this.service.getClasses()
+    this.classService.getClasses()
       .subscribe(classes => this.classes = classes)
   }
 
   getClasses2(): void {
-    this.service.getClasses2()
+    this.classService.getClasses2()
       .subscribe(classes2 => this.classes2 = classes2 )
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 import { ActivatedRoute } from '@angular/router';
 import { Class } from '../class';
 import { Cour } from '../cour';
@@ -32,21 +33,14 @@ export class ClasseDetailsComponent implements OnInit {
     //private location: Location
   ) { }
 
+
+  ngOnChanges() {
+
+  }
   ngOnInit(): void {
     this.getClass();
     this.getCours();
-    this.prog();
 
-
-    setTimeout(this.prog, 1000);
-
-
-
-
-
-  }
-
-  ngAfterContentInit() {
   }
 
 
@@ -67,11 +61,9 @@ export class ClasseDetailsComponent implements OnInit {
 
   courTerminer(v:Cour){
 
-
-
     const i = this.cours.indexOf(v);
 
-    // console.log(this.classe)
+    console.log(v)
 
 
     this.service.updateCours(v).subscribe()

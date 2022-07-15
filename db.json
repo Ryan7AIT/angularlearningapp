@@ -4,19 +4,19 @@
       "id": 1,
       "name": "Algorithme 1",
       "major": "mi",
-      "progress": 66.66666666666667
+      "progress": 0
     },
     {
       "id": 2,
       "name": "Analyse 1",
       "major": "mi",
-      "progress": 0
+      "progress": 33.333333333333336
     },
     {
       "id": 3,
       "name": "algebre 1",
       "major": "mi",
-      "progress": 0
+      "progress": 33.333333333333336
     },
     {
       "id": 4,
@@ -28,19 +28,39 @@
   "cours": [
     {
       "id": 1,
-      "name": "Algorithme 1",
-      "major": "mi",
+      "name": "les suit",
+      "link": "../../assets/cours2 EDO.pdf",
       "status": false
     },
     {
       "id": 2,
       "name": "les suit",
       "link": "../../assets/cours2 EDO.pdf",
-      "status": true
+      "status": false
     },
     {
       "id": 3,
       "name": "les integral",
+      "link": "../../assets/cours2 EDO.pdf",
+      "status": false
+    }
+  ],
+  "classes.1.cours": [
+    {
+      "id": 1,
+      "name": "les suit de l'alog 1",
+      "link": "../../assets/cours2 EDO.pdf",
+      "status": false
+    },
+    {
+      "id": 2,
+      "name": "les fonction et les proc de algo1",
+      "link": "../../assets/cours2 EDO.pdf",
+      "status": false
+    },
+    {
+      "id": 3,
+      "name": "les ivecteur et les martrice",
       "link": "../../assets/cours2 EDO.pdf",
       "status": true
     }

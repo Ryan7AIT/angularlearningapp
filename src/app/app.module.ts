@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatProgressBarModule} from'@angular/material/progress-bar';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { SemesterComponent } from './semester/semester.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { BienvenuComponent } from './bienvenu/bienvenu.component';
 import { CourComponent } from './cour/cour.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { CourComponent } from './cour/cour.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

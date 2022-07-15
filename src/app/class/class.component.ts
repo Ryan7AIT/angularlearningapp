@@ -1,5 +1,4 @@
 import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
-import { ClassService } from '../class.service';
 import { Class } from '../class';
 
 
@@ -15,7 +14,6 @@ export class ClassComponent implements OnInit {
   constructor() { }
 
   @Input() class!: Class ;
-  @Input() semester!: string;
 
 
   ngOnInit(): void {
