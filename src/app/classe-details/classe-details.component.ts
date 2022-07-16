@@ -55,8 +55,6 @@ export class ClasseDetailsComponent implements OnInit {
     this.classService.getCours()
       .subscribe(cours => this.cours = cours);
 
-
-
   }
 
   courTerminer(v:Cour){

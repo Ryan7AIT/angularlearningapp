@@ -1,14 +1,7 @@
-<div *ngIf="classe" class="">
+<div *ngIf="classe" class="rounded-lg border">
 
   <h4 class="font-blod font-xl text-center">{{ classe.name }}  </h4>
-  <div class="text-center progress mx-10">progresse:
-
-
-    <!-- <div class="w-full bg-blue-200 rounded-full dark:bg-gray-700">
-      <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-      [ngStyle]="{'width' : '{{classe.progress}}%'}"
-      > {{ classe.progress }}</div>
-    </div> -->
+  <div class="text-center progress mx-10">progresse :
 
 
     <mat-progress-bar mode="determinate" value="{{ classe.progress}}"></mat-progress-bar>
@@ -18,7 +11,7 @@
   <div class=" border vorder-rounded bg-white p-6 m-2">
     <div class="border-b-2 border-blue-500 ">
 
-      <p class="pb-4 text-center">Cahpter 1 </p>
+      <p class="pb-4 text-center font-bold">Cahpter 1 </p>
     </div>
 
     <div class="chapters space-y-4 ml-4 mt-4 text-gray-700">

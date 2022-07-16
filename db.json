@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Algorithme 1",
       "major": "mi",
-      "progress": 0
+      "progress": 66.66666666666667
     },
     {
       "id": 2,
@@ -28,15 +28,15 @@
   "cours": [
     {
       "id": 1,
-      "name": "les suit",
+      "name": "les fonctios",
       "link": "../../assets/cours2 EDO.pdf",
-      "status": false
+      "status": true
     },
     {
       "id": 2,
       "name": "les suit",
       "link": "../../assets/cours2 EDO.pdf",
-      "status": false
+      "status": true
     },
     {
       "id": 3,

@@ -5,12 +5,14 @@ import { ClassesComponent } from './classes/classes.component';
 import { SemesterComponent } from './semester/semester.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { BienvenuComponent } from './bienvenu/bienvenu.component';
+import { CourDetailsComponent } from './cour-details/cour-details.component';
 
 const routes: Routes = [
   {path: 'modules', component: ClassesComponent},
   {path: '', component: WelcomeComponent},
   {path: 'modules/:id', component: ClasseDetailsComponent},
-  {path: 'bien', component: BienvenuComponent}
+  {path: 'bien', component: BienvenuComponent},
+  {path: 'modules/cours/:id', component: CourDetailsComponent}
 
 ];
 

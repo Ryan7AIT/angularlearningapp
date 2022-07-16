@@ -35,10 +35,12 @@ export class ClassService {
 
     const url = `http://localhost:3000/classes/${id}`
     return this.http.get<Class>(url);
+  }
 
+  getCour(id: number) {
 
-    // const classe = CLASSES.find(c => c.id === id )!;
-    // return of(classe)
+    const url = `http://localhost:3000/classes.1.cours/${id}`
+    return this.http.get<Cour>(url);
   }
 
     getCours(){
