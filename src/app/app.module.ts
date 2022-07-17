@@ -16,6 +16,8 @@ import { BienvenuComponent } from './bienvenu/bienvenu.component';
 import { CourComponent } from './cour/cour.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CourDetailsComponent } from './cour-details/cour-details.component';
+import { CommentsComponent } from './comments/comments.component';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CourDetailsComponent } from './cour-details/cour-details.component';
     WelcomeComponent,
     BienvenuComponent,
     CourComponent,
-    CourDetailsComponent
+    CourDetailsComponent,
+    CommentsComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,

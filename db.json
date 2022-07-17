@@ -64,5 +64,37 @@
       "link": "../../assets/cours2 EDO.pdf",
       "status": true
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "title": "this is the first comment",
+      "desc": "and this is the first desctiotion",
+      "status": "closed"
+    },
+    {
+      "id": 2,
+      "title": "this is the second comment",
+      "desc": "and this is the second desctiotion",
+      "status": "closed"
+    },
+    {
+      "id": 3,
+      "title": "this is the third comment",
+      "desc": "and this is the third desctiotion",
+      "status": "closed"
+    },
+    {
+      "id": 4,
+      "title": "hi",
+      "desc": "hi",
+      "status": "done"
+    },
+    {
+      "id": 5,
+      "title": "again",
+      "desc": "agian",
+      "status": "done"
+    }
   ]
 }

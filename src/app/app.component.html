@@ -1,31 +1,31 @@
-<div class="container bg-gray-200 h-screen">
+<div class="container bg-gray-200 ">
 
-<nav class="flex justify-between w-5/6  m-auto py-4 ">
-  <div class="categories flex justify-between space-x-6">
-    <p><a routerLink="/modules"> Modules</a></p>
-    <p>ALG</p>
-    <p>ALG</p>
-    <p>ALG</p>
-    <p>ALG</p>
+  <nav class="flex justify-between w-5/6  m-auto py-4 ">
+    <div class="categories flex justify-between space-x-6">
+      <p><a routerLink="/modules"> Modules</a></p>
+      <p>ALG</p>
+      <p>ALG</p>
+      <p>ALG</p>
+      <p>ALG</p>
+    </div>
+    <div class="account">
+      <p>ryan</p>
+    </div>
+  </nav>
+
+  <header>
+  <h2 class="font-bold text-center px-4">Votre Modules</h2>
+  <div class="modules m-auto w-5/6 mt-6 ">
+
+  <router-outlet></router-outlet>
+
+  <footer class="w-full bg-gray-700 py-6 mt-6 px-4 text-white mt-4">
+    <div class="mx-10">
+
+    <p> Made By Ryan </p>
+    </div>
+  </footer>
   </div>
-  <div class="account">
-    <p>ryan</p>
-  </div>
-</nav>
-
-<header>
-<h2 class="font-bold text-center px-4">Votre Modules</h2>
-<div class="modules m-auto w-5/6 mt-6 ">
-
-<router-outlet></router-outlet>
-
-<footer class="fixed left-0 bottom-0 w-full bg-gray-700 py-6 mt-6 px-4 text-white">
-  <div class="mx-10">
-
-   <p> Made By Ryan </p>
-  </div>
-</footer>
-</div>
-</header>
+  </header>
 
 </div>

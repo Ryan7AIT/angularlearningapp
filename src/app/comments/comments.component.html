@@ -1,0 +1,22 @@
+<div class="comments flex justify-between py-4">
+  <div class="add-comment float border rounded-lg bg-white   max-h-96  p-4 px-6">
+    <form (ngSubmit)="addIdea()" >
+      <h3 class="text-center mb-2 text-gray-500">Add an idea</h3>
+      <p class="text-center mb-2 text-gray-500">u have a qst? idea? just ask</p>
+      <input class="my-4 border" name="title" type="text" [(ngModel)] ="title" placeholder="You idea">
+      <br/>
+      <textarea name="" id="" cols="30" rows="5" name="desc" [(ngModel)] ="desc"> what you have in mind</textarea>
+      <br>
+
+      <button type="submit" class="bg-blue-500 px-4 py-3 text-white m-4"> Add idea</button>
+    </form>
+  </div>
+
+  <div class="all-comments w-2/3">
+    <div class="filter-comments">
+      filters
+      {{ title}}
+    </div>
+    <app-comment [comments]="comments"></app-comment>
+  </div>
+</div>

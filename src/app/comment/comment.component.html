@@ -1,0 +1,33 @@
+<div class="ideas bg-white p-4 m-4 border rounded-lg" *ngFor="let comment of comments">
+  <div class="idea">
+    <div class="head flex justify-between border-b-2 pb-2">
+
+      <div class="info">
+        <p class="bg-blue-500 text-white border rounded-lg px-4 w-24 mt-4">17 votes</p>
+        <p class="text-gray-500">1 min ago</p>
+      </div>
+
+      <div class="info">
+        <p class="font-bold">
+          {{ comment.title}}
+        </p>
+
+      </div>
+      <div class="user border-l-2 px-4">
+        <div class="img w-24">
+          <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads02&accessoriesType=Blank&hairColor=Auburn&facialHairType=MoustacheMagnum&facialHairColor=BlondeGolden&clotheType=BlazerSweater&eyeType=EyeRoll&eyebrowType=RaisedExcitedNatural&mouthType=Sad&skinColor=Black'
+/>
+        </div>
+        <p>ryan</p>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="description px-6 mt-2">
+          <p> {{ comment.desc }}</p>
+      </div>
+    </div>
+
+  </div>
+</div>
