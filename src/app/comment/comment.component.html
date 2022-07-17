@@ -1,5 +1,5 @@
-<div class="ideas bg-white p-4 m-4 border rounded-lg" *ngFor="let comment of comments">
-  <div class="idea">
+<div class="ideas bg-white p-4 m-4 border rounded-lg hover:drop-shadow-2xl"  *ngFor="let comment of comments" >
+  <div class="idea" >
     <div class="head flex justify-between border-b-2 pb-2">
 
       <div class="info">
@@ -23,9 +23,14 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer flex justify-between">
       <div class="description px-6 mt-2">
           <p> {{ comment.desc }}</p>
+      </div>
+      <div class="detail">
+        <a routerLink="comments/{{comment.id}}">
+          Detail
+        </a>
       </div>
     </div>
 

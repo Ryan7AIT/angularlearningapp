@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CourDetailsComponent } from './cour-details/cour-details.component';
 import { CommentsComponent } from './comments/comments.component';
 import { CommentComponent } from './comment/comment.component';
+import { CommentDetailsComponent } from './comment-details/comment-details.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CommentComponent } from './comment/comment.component';
     CourComponent,
     CourDetailsComponent,
     CommentsComponent,
-    CommentComponent
+    CommentComponent,
+    CommentDetailsComponent
   ],
   imports: [
     BrowserModule,

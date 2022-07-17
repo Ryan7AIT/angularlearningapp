@@ -7,6 +7,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { BienvenuComponent } from './bienvenu/bienvenu.component';
 import { CourDetailsComponent } from './cour-details/cour-details.component';
 import { CommentsComponent } from './comments/comments.component';
+import { CommentDetailsComponent } from './comment-details/comment-details.component';
 
 const routes: Routes = [
   {path: 'modules', component: ClassesComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'modules/:id', component: ClasseDetailsComponent},
   {path: 'bien', component: BienvenuComponent},
   {path: 'modules/cours/:id', component: CourDetailsComponent},
-  {path: 'forum', component: CommentsComponent}
+  {path: 'forum', component: CommentsComponent},
+  {path: 'forum/comments/:id', component: CommentDetailsComponent}
 
 ];
 

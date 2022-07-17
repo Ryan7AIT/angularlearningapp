@@ -25,4 +25,13 @@ export class CommentService {
 
 
 
+
+  getComment(id: number) {
+
+    const url = `http://localhost:3000/comments/${id}`
+    return this.http.get<Comment>(url);
+  }
+
+
+
 }
