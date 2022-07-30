@@ -1,12 +1,10 @@
-<div class="containe   bg-gray-100 text-gray-700  ">
+<div class="container   bg-gray-100 text-gray-700  ">
 
     <nav class="flex justify-between w-5/6  m-auto py-4 ">
       <div class="categories flex justify-between space-x-6">
-        <p><a routerLink="" routerLinkActive="text-blue-500"> Home</a></p>
+        <p><a routerLink="/" routerLinkActive="text-blue-500"> Home</a></p>
         <p><a routerLink="/modules" routerLinkActive="text-blue-500"> Modules</a></p>
         <p><a routerLink="/forum" routerLinkActive="text-blue-500"> Forum</a></p>
-
-        <p>ALG</p>
       </div>
       <div class="account">
         <p>ryan</p>
@@ -22,15 +20,15 @@
     <h2 class="font-bold text-center px-4">Votre Modules</h2>
     <div class="modules m-auto w-5/6 mt-6 ">
 
-    <router-outlet></router-outlet>
-
-    <footer class="w-full fixed bottom-0 left-0  bg-gray-700 py-6 mt-10  px-4 text-white mt-4">
-      <div class="mx-10">
-
-      <p> Made By Ryan </p>
-      </div>
-    </footer>
+      <router-outlet></router-outlet>
     </div>
-    </header>
+  </header>
+
+      <footer class="w-full  bg-gray-700 py-6 mt-10  px-4 text-white ">
+        <div class="mx-10">
+
+        <p> Made By Ryan </p>
+        </div>
+      </footer>
 
   </div>

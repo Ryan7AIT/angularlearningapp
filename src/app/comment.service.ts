@@ -9,7 +9,7 @@ import { Observable, retry } from 'rxjs';
 })
 export class CommentService {
 
-  url = "http://localhost:3000/comments";
+  url = "http://localhost:3000/ideas";
   larevlurl = "http://learningappbacken.test/api/ideas";
 
   constructor(
@@ -29,7 +29,7 @@ export class CommentService {
 
   getComment(id: number) {
 
-    const url = `http://localhost:3000/comments/${id}`
+    const url = `http://localhost:3000/ideas/${id}`
     const laravelurl = `http://learningappbacken.test/api/ideas/${id}`
     return this.http.get<Idea>(url);
   }
@@ -39,7 +39,7 @@ export class CommentService {
     const laravelurl = `http://learningappbacken.test/api/ideas/${id}`
 
 
-    const url = `http://learningappbacken.test/api/ideas/${id}`;
+    const url = `http://localhost:3000/ideas/${id}`;
 
     return this.http.put<Idea>(url , laravelurl);
 

@@ -8,6 +8,7 @@ import { BienvenuComponent } from './bienvenu/bienvenu.component';
 import { CourDetailsComponent } from './cour-details/cour-details.component';
 import { CommentsComponent } from './comments/comments.component';
 import { CommentDetailsComponent } from './comment-details/comment-details.component';
+import { IdeaComponent } from './idea/idea.component';
 
 const routes: Routes = [
   {path: 'modules', component: ClassesComponent},

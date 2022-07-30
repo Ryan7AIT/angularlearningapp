@@ -122,5 +122,37 @@
       "description": "test",
       "status": "done"
     }
+  ],
+  "ideas": [
+    {
+      "id": 1,
+      "title": "this is the first IDEA",
+      "desc": "and this is the first desctiotion",
+      "status": "closed",
+      "created_at": "12 sept",
+      "updated_at": "12 sept"
+    },
+    {
+      "id": 2,
+      "title": "this is the second IDEA",
+      "desc": "and this is the second desctiotion",
+      "status": "closed",
+      "created_at": "12 sept",
+      "updated_at": "12 sept"
+    },
+    {
+      "id": 3,
+      "title": "this is the third IDEA",
+      "desc": "and this is the third desctiotion",
+      "status": "closed",
+      "created_at": "12 sept",
+      "updated_at": "12 sept"
+    },
+    {
+      "id": 4,
+      "title": "hola",
+      "description": "hola",
+      "status": "done"
+    }
   ]
 }
