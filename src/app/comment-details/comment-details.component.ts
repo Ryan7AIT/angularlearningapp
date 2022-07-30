@@ -12,6 +12,8 @@ import { Idea } from '../comment';
 export class CommentDetailsComponent implements OnInit {
 
   comment!: Idea;
+  votes!: number;
+  voted!: any
 
   constructor(
     private route: ActivatedRoute,
@@ -19,18 +21,35 @@ export class CommentDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getComment()
+    this.getComment();
+    this.getVotes();
   }
 
-  votes(id:number) {
-    this.commentService.vote(id)
+  vote(idea: Idea) {
+
+    // if(this.voted.user_id)
+
+    this.commentService.vote(idea)
       .subscribe(c => this.comment = c)
 
       // this.getComment();
   }
 
+  getVotes(): any {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+
+    this.commentService.getVotes(id).subscribe(
+      v => this.voted = v
+      );
+
+    // if()
+
+  };
+
+
 
   getComment(): void {
+
     const id = Number(this.route.snapshot.paramMap.get('id'));
 
     this.commentService.getComment(id)

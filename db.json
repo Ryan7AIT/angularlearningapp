@@ -128,6 +128,7 @@
       "id": 1,
       "title": "this is the first IDEA",
       "desc": "and this is the first desctiotion",
+      "votes": 100,
       "status": "closed",
       "created_at": "12 sept",
       "updated_at": "12 sept"
@@ -136,6 +137,7 @@
       "id": 2,
       "title": "this is the second IDEA",
       "desc": "and this is the second desctiotion",
+      "votes": 100,
       "status": "closed",
       "created_at": "12 sept",
       "updated_at": "12 sept"
@@ -144,15 +146,29 @@
       "id": 3,
       "title": "this is the third IDEA",
       "desc": "and this is the third desctiotion",
+      "votes": 99,
       "status": "closed",
       "created_at": "12 sept",
       "updated_at": "12 sept"
     },
     {
       "id": 4,
-      "title": "hola",
-      "description": "hola",
-      "status": "done"
+      "title": "test idas form",
+      "description": "agian?",
+      "status": "done",
+      "votes": 8
+    }
+  ],
+  "votes": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "idea_id": 1
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "idea_id": 1
     }
   ]
 }

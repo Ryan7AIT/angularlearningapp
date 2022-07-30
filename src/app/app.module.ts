@@ -20,6 +20,7 @@ import { CommentsComponent } from './comments/comments.component';
 import { CommentComponent } from './comment/comment.component';
 import { CommentDetailsComponent } from './comment-details/comment-details.component';
 import { IdeaComponent } from './idea/idea.component';
+import { TestModalComponent } from './test-modal/test-modal.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { IdeaComponent } from './idea/idea.component';
     CommentsComponent,
     CommentComponent,
     CommentDetailsComponent,
-    IdeaComponent
+    IdeaComponent,
+    TestModalComponent
   ],
   imports: [
     BrowserModule,
