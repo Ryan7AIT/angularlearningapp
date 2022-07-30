@@ -1,5 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { Comment } from '../comment';
+import { Idea } from '../comment';
 import { CommentService } from '../comment.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { CommentService } from '../comment.service';
 })
 export class CommentsComponent implements OnInit {
 
-  @Output() comment!: Comment
+  @Output() comment!: Idea
 
   constructor(private commentServie: CommentService) { }
 
@@ -20,7 +20,7 @@ export class CommentsComponent implements OnInit {
   title!: string;
   desc!: string;
 
-  comments :Comment[] = []
+  comments :Idea[] = []
 
   getComments(): void {
 
@@ -31,10 +31,10 @@ export class CommentsComponent implements OnInit {
 
   addIdea() {
 
-    const newComment:Comment = {
+    const newComment = {
       id: this.comments.length + 1,
       title : this.title,
-      desc: this.desc,
+      description: this.desc,
       status:"done"
     }
 

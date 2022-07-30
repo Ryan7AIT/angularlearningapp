@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Comment } from './comment';
+import { Idea } from './comment';
 import { Observable, retry } from 'rxjs';
 
 
@@ -10,17 +10,18 @@ import { Observable, retry } from 'rxjs';
 export class CommentService {
 
   url = "http://localhost:3000/comments";
+  larevlurl = "http://learningappbacken.test/api/ideas";
 
   constructor(
     private http: HttpClient
   ) { }
 
   getComments() {
-    return this.http.get<Comment[]>(this.url);
+    return this.http.get<Idea[]>(this.url);
   }
 
-  addIdea(newcomment:Comment): Observable<Comment> {
-    return this.http.post<Comment>(this.url,newcomment)
+  addIdea(newcomment:any): Observable<Idea> {
+    return this.http.post<Idea>(this.url,newcomment)
   }
 
 
@@ -29,7 +30,19 @@ export class CommentService {
   getComment(id: number) {
 
     const url = `http://localhost:3000/comments/${id}`
-    return this.http.get<Comment>(url);
+    const laravelurl = `http://learningappbacken.test/api/ideas/${id}`
+    return this.http.get<Idea>(url);
+  }
+
+  vote(id: number): Observable<Idea> {
+
+    const laravelurl = `http://learningappbacken.test/api/ideas/${id}`
+
+
+    const url = `http://learningappbacken.test/api/ideas/${id}`;
+
+    return this.http.put<Idea>(url , laravelurl);
+
   }
 
 

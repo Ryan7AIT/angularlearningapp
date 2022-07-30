@@ -2,30 +2,41 @@ import { Class } from "./class"
 export const CLASSES: Class[]  = [
 
   {id: 1,
-  name: 'analyse 1',
-  major: 'mi',
-  progress: 0
+  name: 'Analyse 3',
+  major: 'ro',
+  progress: 0,
+  semester: 3,
   },
   {id: 2,
-    name: 'algebre 1',
-    major: 'mi',
-    progress: 0
+    name: 'Algebre 3',
+    major: 'ro',
+    progress: 0,
+    semester: 3,
   },
   {id: 3,
-    name: 'algoruthme 1',
-    major: 'mi',
-    progress: 0
+    name: 'Topologie',
+    major: 'ro',
+    progress: 0,
+    semester: 3,
   },
   {id: 4,
-    name: 'TCE ',
-    major: 'mi',
-    progress: 0
+    name: 'Proba ',
+    major: 'ro',
+    progress: 0,
+    semester: 3,
   },
   {id: 5,
-    name: 'fizik',
+    name: 'Anal-num',
     major: 'mi',
-    progress: 0
+    progress: 0,
+    semester: 3,
   },
+  {id: 6,
+    name: 'Histoir',
+    major: 'mi',
+    progress: 0,
+    semester: 3,
+    },
 
 
 ]

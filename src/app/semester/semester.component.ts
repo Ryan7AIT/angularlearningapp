@@ -16,6 +16,8 @@ export class SemesterComponent implements OnInit {
   @Input() semester!: string ;
 
 
+
+
   class!: Class ;
 
 

@@ -16,6 +16,8 @@ export class ClassService {
 
   apiUrl = "http://localhost:3000/classes";
 
+  laravelurl = "http://learningappbacken.test/api/modules";
+
   classes = [];
   classes2 = [];
   progress = 0;
@@ -23,7 +25,7 @@ export class ClassService {
 
   getClasses() {
 
-    return this.http.get<Class[]>(this.apiUrl);
+    return this.http.get<Class[]>(this.laravelurl);
   }
 
   getClasses2() {
@@ -34,12 +36,14 @@ export class ClassService {
   getClasse(id: number) {
 
     const url = `http://localhost:3000/classes/${id}`
+    const laravelurl = `http://learningappbacken.test/api/modules/${id}`
+
     return this.http.get<Class>(url);
   }
 
   getCour(id: number) {
 
-    const url = `http://localhost:3000/classes.1.cours/${id}`
+    const url = `http://localhost:3000/cours/${id}`
     return this.http.get<Cour>(url);
   }
 

@@ -5,4 +5,5 @@ export interface Class {
   name: string;
   major: string;
   progress: number;
+  semester: number
 }

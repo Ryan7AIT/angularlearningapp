@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 import { CommentService } from '../comment.service';
-import { Comment } from '../comment';
+import { Idea } from '../comment';
 
 @Component({
   selector: 'app-comment-details',
@@ -11,7 +11,7 @@ import { Comment } from '../comment';
 })
 export class CommentDetailsComponent implements OnInit {
 
-  comment!: Comment;
+  comment!: Idea;
 
   constructor(
     private route: ActivatedRoute,
@@ -20,6 +20,13 @@ export class CommentDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getComment()
+  }
+
+  votes(id:number) {
+    this.commentService.vote(id)
+      .subscribe(c => this.comment = c)
+
+      // this.getComment();
   }
 
 

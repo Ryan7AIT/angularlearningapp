@@ -3,7 +3,7 @@
 export interface Cour {
   id:number;
   name: string;
-  link: string;
+  courLink: string;
   status: boolean;
 // /  chapters: number;
 

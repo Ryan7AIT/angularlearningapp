@@ -1,0 +1,6 @@
+.header {
+  background-image: url('../assets/header.PNG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

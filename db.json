@@ -2,54 +2,80 @@
   "classes": [
     {
       "id": 1,
-      "name": "Algorithme 1",
-      "major": "mi",
-      "progress": 66.66666666666667
+      "name": "Analyse 3",
+      "major": "ro",
+      "semester": 3,
+      "progress": 75,
+      "created_at": "2022-07-18T18:04:35.000000Z",
+      "updated_at": "2022-07-18T18:04:35.000000Z"
     },
     {
       "id": 2,
-      "name": "Analyse 1",
-      "major": "mi",
-      "progress": 33.333333333333336
+      "name": "Analyse 3",
+      "major": "ro",
+      "progress": 33.333333333333336,
+      "semester": 3
     },
     {
       "id": 3,
-      "name": "algebre 1",
-      "major": "mi",
-      "progress": 33.333333333333336
+      "name": "algebre 3",
+      "major": "ro",
+      "progress": 33.333333333333336,
+      "semester": 3
     },
     {
       "id": 4,
-      "name": "TCE",
-      "major": "mi",
-      "progress": 0
+      "name": "Proba",
+      "major": "ro",
+      "progress": 0,
+      "semester": 3
+    },
+    {
+      "id": 5,
+      "name": "Anal-num",
+      "major": "ro",
+      "progress": 0,
+      "semester": 3
+    },
+    {
+      "id": 6,
+      "name": "Histoir",
+      "major": "ro",
+      "progress": 0,
+      "semester": 3
     }
   ],
   "cours": [
     {
       "id": 1,
-      "name": "les fonctios",
-      "link": "../../assets/cours2 EDO.pdf",
-      "status": true
+      "name": "Cour 1 - generalite sur les graphe",
+      "courLink": "../../assets/cours.1.graphes.pdf",
+      "status": false
     },
     {
       "id": 2,
-      "name": "les suit",
-      "link": "../../assets/cours2 EDO.pdf",
+      "name": "suit de Cour 1 - generalite sur les graphet",
+      "courLink": "../../assets/cours.2.graphes.pdf",
       "status": true
     },
     {
       "id": 3,
-      "name": "les integral",
-      "link": "../../assets/cours2 EDO.pdf",
-      "status": false
+      "name": "quelque de base sue les graphes",
+      "courLink": "../../assets/cours.4.graphes.pdf",
+      "status": true
+    },
+    {
+      "id": 4,
+      "name": "quelque de base sue les graphes",
+      "courLink": "../../assets/cours.4.graphes.pdf",
+      "status": true
     }
   ],
   "classes.1.cours": [
     {
       "id": 1,
       "name": "les suit de l'alog 1",
-      "link": "../../assets/cours2 EDO.pdf",
+      "link": "../../assets/cours.4.graphes.pdf",
       "status": false
     },
     {
@@ -70,42 +96,30 @@
       "id": 1,
       "title": "this is the first comment",
       "desc": "and this is the first desctiotion",
-      "status": "closed"
+      "status": "closed",
+      "created_at": "12 sept",
+      "updated_at": "12 sept"
     },
     {
       "id": 2,
       "title": "this is the second comment",
       "desc": "and this is the second desctiotion",
-      "status": "closed"
+      "status": "closed",
+      "created_at": "12 sept",
+      "updated_at": "12 sept"
     },
     {
       "id": 3,
       "title": "this is the third comment",
       "desc": "and this is the third desctiotion",
-      "status": "closed"
+      "status": "closed",
+      "created_at": "12 sept",
+      "updated_at": "12 sept"
     },
     {
       "id": 4,
-      "title": "hi",
-      "desc": "hi",
-      "status": "done"
-    },
-    {
-      "id": 5,
-      "title": "again",
-      "desc": "agian",
-      "status": "done"
-    },
-    {
-      "id": 6,
-      "title": "hola",
-      "desc": "hola man howa are you?",
-      "status": "done"
-    },
-    {
-      "id": 7,
-      "title": "meriam",
-      "desc": "wach raykom f meraim",
+      "title": "test",
+      "description": "test",
       "status": "done"
     }
   ]

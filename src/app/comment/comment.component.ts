@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Comment } from '../comment';
+import { Idea } from '../comment';
 import { CommentService } from '../comment.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class CommentComponent implements OnInit {
 
 
 
-  @Input() comments!: Comment[]
+  @Input() comments!: Idea[]
 
   ngOnInit(): void {
   }
